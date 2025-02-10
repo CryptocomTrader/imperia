@@ -153,6 +153,23 @@ body {
     margin-bottom: 15px;
 }
 
+.contact-icon {
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+.contact-icon i {
+    transition: color 0.2s;
+}
+
+.contact-icon:hover i {
+    color: #0056b3 !important;
+}
+
 /* Кнопки */
 .btn-primary {
     background-color: #007bff;
