@@ -168,37 +168,28 @@ body {
     min-width: 120px;
 }
 
-.contact-icon {
-    display: flex;
-    flex-direction: column;
+.contact-link {
+    text-decoration: none;
+    color: #666;
+    display: inline-flex;
     align-items: center;
-    text-align: center;
-    transition: all 0.3s ease;
-    padding: 15px;
-    border-radius: 10px;
-    width: 100%;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
 }
 
-.contact-icon:hover {
-    transform: translateY(-5px);
+.contact-link:hover {
     background-color: rgba(0, 123, 255, 0.1);
+    color: #0056b3;
 }
 
-.contact-icon i {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    transition: color 0.3s;
-}
-
-.contact-icon:hover i {
+.contact-link:hover i {
     color: #0056b3 !important;
 }
 
-.contact-icon div {
-    color: #666;
-    font-size: 0.9rem;
-    line-height: 1.2;
-    word-break: break-word;
+.contact-link span {
+    font-size: 0.95rem;
 }
 
 /* Кнопки */
