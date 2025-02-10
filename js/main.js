@@ -24,14 +24,16 @@ document.querySelector('form[name="contact"]').addEventListener('submit', async 
     const message = this.querySelector('textarea[name="message"]').value || 'Не вказано';
     
     try {
-        // Відправляємо через новий webhook
+        // Відправляємо через webhook
         const response = await fetch('https://hook.eu2.make.com/44ts1ranli5d07hkyyew65f8tvm6q9gg', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                text: '🔔 Нова заявка!\n\n👤 Ім\'я: ' + name + '\n📞 Телефон: ' + phone + '\n💬 Повідомлення: ' + message
+                name: name,
+                phone: phone,
+                message: message
             })
         });
 
