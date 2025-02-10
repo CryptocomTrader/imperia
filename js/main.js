@@ -31,7 +31,7 @@ document.querySelector('form[name="contact"]').addEventListener('submit', async 
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                text: '"🔔 Нова заявка!"\n"👤 Ім\'я: " ' + name + '\n"📞 Телефон: " ' + phone + '\n"💬 Повідомлення: " ' + message
+                text: '🔔 Нова заявка!\n\n👤 Ім\'я: ' + name + '\n📞 Телефон: ' + phone + '\n💬 Повідомлення: ' + message
             })
         });
 
