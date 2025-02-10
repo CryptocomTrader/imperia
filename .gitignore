@@ -1,0 +1,10 @@
+# Конфігураційні файли
+js/config.js
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
